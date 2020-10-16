@@ -23,7 +23,7 @@ RUN cd ethminer; \
     make install;
 
 # Miner API port inside container
-ENV ETHMINER_API_PORT=3000
+ENV ETHMINER_API_PORT=3333
 EXPOSE ${ETHMINER_API_PORT}
 
 # Prevent GPU overheading by stopping in 80C and starting again in 50C
